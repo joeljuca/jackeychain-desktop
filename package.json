@@ -7,6 +7,9 @@
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "dependencies": {
+    "photon": "https://github.com/connors/photon.git#39bc69df155eb27a9b1b9557eed0846f9bc3e38c"
+  },
   "devDependencies": {
     "electron-prebuilt": "^1.3.1"
   }

@@ -3,8 +3,51 @@
 <head>
   <meta charset="utf-8">
   <title>Jackeychain</title>
+  <link rel="stylesheet" href="../node_modules/photon/dist/css/photon.css">
 </head>
 <body>
-  <h1>Jackeychain</h1>
+<div class="window">
+  <div class="window-content">
+    <div class="pane-group">
+      <div class="pane-sm sidebar">
+        <div style="width: 150px; height: 140px; font-size: 90px; text-align: center;">
+          <span class="icon icon-key"></span>
+        </div>
+        <div class="nav-group">
+          <h3 class="nav-group-title">Quick filters:</h3>
+          <span class="nav-group-item"><span class="icon icon-star"></span>Favorites</span>
+          <span class="nav-group-item"><span class="icon icon-user"></span>Logins</span>
+          <span class="nav-group-item"><span class="icon icon-lock"></span>Passwords</span>
+          <span class="nav-group-item"><span class="icon icon-docs"></span>Notes</span>
+        </div><!-- /.nav-group -->
+        <div class="nav-group">
+          <h3 class="nav-group-title">Smart filters:</h3>
+          <span class="nav-group-item"><span class="icon icon-back-in-time"></span>Last week</span>
+          <span class="nav-group-item"><span class="icon icon-back-in-time"></span>Last month</span>
+          <span class="nav-group-item"><span class="icon icon-back-in-time"></span>Older entries</span>
+        </div><!-- /.nav-group -->
+      </div><!-- /.pane-sm.sidebar -->
+
+      <div class="pane">
+        <table class="table-striped">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Login</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Google</td>
+              <td>john.doe@gmail.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div><!-- /.pane -->
+    </div><!-- /.pane-group -->
+  </div><!-- /.window-content -->
+  <footer class="toolbar toolbar-footer">
+  </footer>
+</div><!-- /.window -->
 </body>
 </html>
