@@ -28,7 +28,7 @@ const args = {
 }
 
 gulp.task('build', ['build:html'])
-gulp.task('build:html', _ => {
+gulp.task('build:html', function () {
   gulp.src(args.html.src)
     .pipe(pug({pretty: true}))
     .pipe(rename(p => p.basename = p.basename.slice(0, '.view'.length * -1)))
@@ -36,21 +36,21 @@ gulp.task('build:html', _ => {
 })
 
 gulp.task('build:css', ['build:css:vendor', 'build:css:app'])
-gulp.task('build:css:vendor', _ => {
+gulp.task('build:css:vendor', function () {
   gulp.src(args.css.vendor.src)
     .pipe(concat(args.css.vendor.filename))
     .pipe(gulp.dest(args.css.vendor.dest))
 })
-gulp.task('build:css:app', _ => {
+gulp.task('build:css:app', function () {
   gulp.src(args.css.app.src)
     .pipe(concat(args.css.app.filename))
     .pipe(gulp.dest(args.css.app.dest))
 })
 
 gulp.task('watch', ['watch:html'])
-gulp.task('watch:html', _ => {
+gulp.task('watch:html', function () {
   gulp.watch(args.html.watch, ['build:html'])
 })
-gulp.task('watch:css', _ => {
+gulp.task('watch:css', function () {
   gulp.watch(args.css.vendor.src, ['build:css'])
 })
