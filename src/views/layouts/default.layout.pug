@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Jackeychain
+    link(rel='stylesheet', href='../node_modules/photon/dist/css/photon.css')
+  body
+    .window
+      .window-content
+        .pane-group
+          .pane-sm.sidebar
+            include ../components/sidebar.component.pug
+          .pane
+            block content
+      footer.toolbar.toolbar-footer
